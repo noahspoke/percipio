@@ -13,6 +13,15 @@ module.exports = {
 	},
 
 	module: {
+		/*rules: [
+			{
+				test: /\.scss$/,
+				enforce: 'pre',
+				exclude: /node_modules/,
+				loader: 'import-glob-loader'
+			}
+		],*/
+
 		loaders: [
 			{
 				test: /\.js$/,

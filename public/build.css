@@ -1,2 +1,11 @@
-div p {
-  color: red; }
+.content-wrapper {
+  width: 100%;
+  max-width: 640px;
+  margin: 16px auto;
+  text-align: left; }
+.content-wrapper {
+  width: 100%;
+  max-width: 640px;
+  text-align: left; }
+  .content-wrapper .text-field, .content-wrapper .block-item {
+    display: block; }

@@ -1,0 +1,9 @@
+.content-wrapper {
+	width: 100%;
+	max-width: 640px;
+	text-align: left;
+
+	.text-field, .block-item {
+		display: block;
+	}
+}
