@@ -1,4 +1,9 @@
 class DashboardController < ApplicationController
-  def index
-  end
+	include UsersHelper
+
+	before_action :require_user
+
+	def index
+
+	end
 end
