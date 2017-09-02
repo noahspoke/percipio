@@ -8,8 +8,8 @@ export default class SignUp extends Component {
 		return(
 			<MuiThemeProvider>
 				<div class="content-wrapper">
-					<TextField className="text-field" hintText="Username" name="username" type="text" style={ {display:'block'} } />
-					<TextField className="text-field" hintText="Password" name="username" type="text" style={ {display:'block'} } />
+					<TextField className="text-field" hintText="Username" name="user[username]" type="text" style={ {display:'block'} } />
+					<TextField className="text-field" hintText="Password" name="user[password]" type="text" style={ {display:'block'} } />
 					<RaisedButton className="block-item" >Submit!</RaisedButton>
 				</div>
 			</MuiThemeProvider>

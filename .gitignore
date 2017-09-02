@@ -19,3 +19,4 @@
 
 # Ignore any of our Node modules
 /node_modules
+.env
