@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 	post 'signup', to: 'users#create', as: 'create_user'
 
 	get 'login', to: 'sessions#new', as: 'login'
-	post 'login', to: 'sessions#create', as: ''
+	post 'login', to: 'sessions#create', as: 'create_session'
 
 	get 'dashboard', to: 'dashboard#index', as: 'dashboard'
 

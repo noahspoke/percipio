@@ -1,7 +1,19 @@
 require 'rails_helper'
 
-RSpect.describe DashboardController, :type => :controller do
+RSpec.describe DashboardController, :type => :controller do
 	describe "GET #index" do
-		it "get all successful posts"
+		it "does not load with nil session" do
+			session[:user_id] = nil
+			get :index
+			expect(response).to have_http_status(302)
+			expect(response).to redirect_to login_url
+		end
+
+		it "loads main page with session present" do
+			session[:user_id] = 1
+			get :index
+
+			expect(response).to have_http_status(:success)
+		end
 	end
 end

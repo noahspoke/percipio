@@ -1,9 +1,13 @@
 class UsersController < ApplicationController
+  #protect_from_forgery prepend: true
+
   def new
   end
 
   def create
   	redirect_to signup_url and return unless params[:user]
+
+    redirect_to login_url, :notice => "An account with this username already exists." and return if User.find_by(username: user_params[:username])
 
   	user = User.create(user_params)
 
